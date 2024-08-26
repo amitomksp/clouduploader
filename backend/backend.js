@@ -6,12 +6,12 @@ const cors = require("cors");
 app.use(cors());
 
 //mongodb connection
-const mongoUrl =
-  "mongodb+srv://amitomksp:iamamit@cluster0.zllye.mongodb.net/?retryWrites=true&w=majority";
-
+const mongoUrl ="mongodb+srv://amit9394kumar:TeAqULkD9d4ey2j1@uploader.tnynv.mongodb.net/?retryWrites=true&w=majority&appName=uploader";
 mongoose
   .connect(mongoUrl, {
     useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 30000
   })
   .then(() => {
     console.log("Connected to database");

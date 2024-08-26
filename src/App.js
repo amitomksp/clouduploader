@@ -45,9 +45,10 @@ function App() {
         : allImage.map((data) => {
             return (
               <img
-                src={require(`./images/${data.image}`)}
+                src={require(`../src/images/${data.image}`)}
                 height={100}
                 width={100}
+                alt=""
               />
             );
           })}

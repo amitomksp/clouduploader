@@ -9,4 +9,4 @@ const ImageDetailsScehma = new mongoose.Schema(
   }
 );
 
-mongoose.model("ImageDetails", ImageDetailsScehma);
+module.exports=mongoose.model("ImageDetails", ImageDetailsScehma);
